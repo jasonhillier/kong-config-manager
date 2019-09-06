@@ -15,7 +15,7 @@ Promise.config({
 const program = makeProgram(false);
 
 let retPromise = null;
-if (program.host) {
+if (program.host && !program.nodump) {
   retPromise = dump(program.host, program.instance, program.ssl);
 } else if (program.file) {
   const configs = getConfigs(program.file);

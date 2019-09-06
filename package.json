@@ -1,7 +1,7 @@
 {
-  "name": "kong-config-manager",
-  "version": "1.7.1",
-  "description": "A CLI tool who can operate CURD on configs of live Kong instances",
+  "name": "kong-config-manager-nodump",
+  "version": "1.0.4",
+  "description": "A CLI tool who can operate CURD on configs of live Kong instances (forked)",
   "bin": {
     "kcm": "./bin/kcm.js"
   },

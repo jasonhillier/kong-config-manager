@@ -28,7 +28,12 @@ module.exports = function makeProgram(hasY) {
       'whether ignore ssl certificates errors, default to `false`',
       false
     )
-    .option('--no-git', 'use this tool without the help of git');
+    .option('--no-git', 'use this tool without the help of git')
+    .option('--nodump', 'skip updating local config files')
+    .option(
+      '-nd, --nodelete',
+      'do not delete any existing configuration in kong (add-only)'
+    );
   if (hasY) {
     tmp = tmp.option(
       '-y, --yes',
